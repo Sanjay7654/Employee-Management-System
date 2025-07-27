@@ -11,7 +11,9 @@ A responsive and interactive Employee Management System built using HTML, CSS, a
 
 # Technologies Used
 HTML
+
 CSS
+
 JavaScript 
 
 # Validations
@@ -25,11 +27,12 @@ Details should be unique while entering a new record
 
 
 # Project Structure
-<pre>
+
+```
 index.html
 style.css
 script.js  
-</pre>
+```
 
 
 
