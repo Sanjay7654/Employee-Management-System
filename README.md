@@ -28,9 +28,10 @@ Details should be unique while entering a new record
 
 # Project Structure
 
+<pre>
 ├── index.html
 ├── style.css
 └── script.js
-
+</pre>
 
 
