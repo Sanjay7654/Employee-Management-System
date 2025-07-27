@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h2>Employee Management System</h2>
+
+    <form id="employeeForm">
+      <input type="hidden" id="employeeId" value="">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required title="Please enter a valid email address">
+
+
+      <label for="department">Department</label>
+      <input type="text" id="department" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" required pattern="[0-9]{10}">
+
+      <label for="salary">Salary (₹)</label>
+      <input type="number" id="salary" required min="0">
+
+      <button type="submit">Save Employee</button>
+    </form>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search employees...">
+      <button class="reset-btn" onclick="resetAll()">Reset All</button>
+    </div>
+
+    <div class="employee-count" id="employeeCount">Total Employees: 0</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Emp Id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Department</th>
+          <th>Phone</th>
+          <th>Salary</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="employeeTableBody"></tbody>
+    </table>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
